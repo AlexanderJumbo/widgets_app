@@ -1,0 +1,10 @@
+git init
+git add .
+git commit -m "message"
+git checkout -b 01-bases -> cambio de rama
+
+git checkout -- .  -> Para recuperar código aún después de haber apagado el equipo
+
+---------------------------
+
+import 'package:flutter/material.dart' show IconData; -> Técnica para importar solo lo que necesitamos

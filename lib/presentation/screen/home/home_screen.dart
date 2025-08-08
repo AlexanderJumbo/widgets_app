@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
-import 'package:widgets_app/presentation/screen/buttons/buttons_screen.dart';
+import 'package:go_router/go_router.dart';
+
 
 
 class HomeScreen extends StatelessWidget {
@@ -58,7 +59,9 @@ class _CustomListTile extends StatelessWidget {
           //   MaterialPageRoute(builder: (context) => const ButtonsScreen()),
           // );
           //* Segunda forma
-          Navigator.pushNamed(context, menuItem.link);
+          // Navigator.pushNamed(context, menuItem.link);
+          //* 3era forma
+          context.push(menuItem.link);
       },
     );
   }

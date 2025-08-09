@@ -66,9 +66,9 @@ class _CustomListTile extends StatelessWidget {
           //* Segunda forma - flutter
           // Navigator.pushNamed(context, menuItem.link);
           //* 3era forma - goRouter
-          // context.push(menuItem.link);
+          context.push(menuItem.link);
           //* 4ta forma - goRouter pero para rutas con nombre
-          context.pushNamed(CardsScreen.name);
+          // context.pushNamed(CardsScreen.name);
       },
     );
   }

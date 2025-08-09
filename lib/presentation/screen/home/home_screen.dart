@@ -68,7 +68,7 @@ class _CustomListTile extends StatelessWidget {
           //* 3era forma - goRouter
           // context.push(menuItem.link);
           //* 4ta forma - goRouter pero para rutas con nombre
-          context.pushNamed(ButtonsScreen.name);
+          context.pushNamed(CardsScreen.name);
       },
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widgets_app/presentation/screen/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screen/cards/cards_screen.dart';
 
 
@@ -67,7 +68,7 @@ class _CustomListTile extends StatelessWidget {
           //* 3era forma - goRouter
           // context.push(menuItem.link);
           //* 4ta forma - goRouter pero para rutas con nombre
-          context.pushNamed(CardsScreen.name);
+          context.pushNamed(ButtonsScreen.name);
       },
     );
   }

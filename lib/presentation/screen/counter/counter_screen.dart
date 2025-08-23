@@ -14,6 +14,7 @@ class CounterScreen extends ConsumerWidget  {
   // Widget build(BuildContext context) {
   Widget build(BuildContext context, WidgetRef ref) {
 
+    //* No usar el watch dentro de métodos
     final int clickCounter = ref.watch( counterProvider );
 
     return Scaffold(
@@ -28,7 +29,14 @@ class CounterScreen extends ConsumerWidget  {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: (){}, child: const Icon(Icons.add),),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        //*forma 1
+        //ref.read(counterProvider.notifier).update((state) => state + 1);
+        //*forma 2
+        ref.read(counterProvider.notifier).state++; //devuelve lo que se especifica en el provider, en este caso un int
+
+
+      }, child: const Icon(Icons.add),),
     );
   }
 }

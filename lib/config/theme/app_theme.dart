@@ -31,4 +31,11 @@ class AppTheme {
       centerTitle: false
     )
   );
+
+  //*Copiamos la instancia de la clase AppTheme
+  AppTheme copyWith({int? selectedColor, bool? isDarkMode}) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkMode: isDarkMode ?? this.isDarkMode
+  );
+
 }
